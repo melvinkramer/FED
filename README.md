@@ -58,6 +58,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+Bij een groot bedrijf als Nike verwacht je een website die tiptop in orde is en voldoet aan de laatste standaard zoals deze voor de WCAG wordt beschreven op hun Website. Niks is minder waar en toch blijkt dat er tientallen punten zijn die beter kunnen. De grootste vraag waar ik mee zit is "waarom"? Waarom is een website die dagelijks bezocht wordt door duizenden - zo niet tienduizenden mensen per dag semantisch niet correct volgens de richtlijnen. Na het vragen aan Sanne (Docent FED) gaf hij aan dat dit te maken heeft met de macht van developers. Hij/zij worden niet van bovenaf gecorrigeerd, waardoor ze eigenlijk vrij spel hebben. Daarom lijkt het mij een super goede opdracht om vanuit het vak de website te herstructureren en tevens toegankelijker maken dan de website die momenteel geschreven is. Door deze opdracht ga ik als ontwerper beter begrijpen wat de voordelen zijn van een correcte website die voldoet aan de richtlijnen van de WCAG.
+
+De website van Nike ziet er goed en gelikt uit. Daar is denk ik iedereen het over eens. Toch blijkt de globale code niet valide en worden er onnodig meerdere div's en classes gebruikt. De navigatie via het toetsenbord door de pagina gaat goed. Dit geldt ook voor het navigeren op mobiel. Vervolgens komen we bij de geschreven code. Het valt op dat er van H1 naar h4 wordt gesprongen en de volgorde dus onlogisch is. Ook worden afbeeldingen niet beschreven als tekst waardoor het begrijpen voor iemand met beperkt zicht onmogelijk wordt gemaakt. Video's op de pagina worden automatisch afgespeeld, zijn niet te pauzeren doch is het niet storend en draagt het bij aan de aankleding van de pagina. Helaas is er geen transcriptie voor de video's. De controle van de pagina is verder in orde los van het pauzeren van de video. Qua toegankelijkheid word de dark/light mode niet ondersteunt. Qua contrast is alles verder in orde.
+
+De kansen op het verbeteren van de website zit hem met name in het verbeteren van de toegankelijkheid van de website. De code herschrijven en meer structuur geven. Ook is het toevoegen meer beschrijvingen voor slechtziende een kans om de website te verbeteren. Hier zal ik gedurende de aankomende werkgroepen verder aan werken.
+
+
 </details>
 
 
