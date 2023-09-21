@@ -5,11 +5,46 @@
   box-sizing:border-box;  
 }
 
+header {
+    background-color: white;
+     display:flex;
+    Justify-content: space-between;
+    padding: 0 14px 0 16px;
+    max-width: 1920px;
+    max-height: 60px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    
+}
 
+header nav ul li {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    background: transparent;
+}
 
+.pre-nav-design-icon {
+    color: #111;
+    width: 24px;
+    height: 24px;
+}
 
+.pre-logo-svg {
+    transform: scale(1.33);
+    height: 100%;
+    width: 100%;
+}
 
-
+.pre-logo-link {
+    height: 59px;
+    width: 59px;
+    margin: 1px 0;
+    color: black;
+}
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
