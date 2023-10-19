@@ -27,3 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
         showCurrentItem();
     }, 3000);
 });
+
+// *************************************************  Video pauze
+function toggleVideo() {
+    const video = document.getElementById("backgroundVideo");
+    const playIcon = document.getElementById("playIcon");
+    const pauseIcon = document.getElementById("pauseIcon");
+
+    if (video.paused) {
+        video.play();
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "inline-block";
+    } else {
+        video.pause();
+        playIcon.style.display = "inline-block";
+        pauseIcon.style.display = "none";
+    }
+}

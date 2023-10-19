@@ -1,10 +1,48 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+/************************************************* Algemeen *************************************************/
+
+@font-face {
+  font-family: "Nike-Futura";
+  src: url('../fonts/Nike-Futura.woff2') format('woff2'),
+  /* Voeg eventueel andere CSS-eigenschappen zoals font-weight en font-style toe */
+}
+
+}
+
+
 
 body {
-    margin: 0px;
-    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Nike-Futura";
+}
+
+body h1 {
+    font-size: 3em;
+    /* 48px / 16px = 3em */
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0em;
+}
+
+a.button {
+    line-height: 1.75em;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1.875em;
+    /* 30px / 16px = 1.875em */
+    padding: 0.375em 1.25em;
+    /* 6px / 16px = 0.375em, 20px / 16px = 1.25em */
+    font-size: 1em;
+    /* 16px / 16px = 1em */
 }
 
 a {
@@ -16,35 +54,90 @@ a {
     text-decoration: underline;
 }
 
-/* Header */
+/************************************************* Dark Light Modus*************************************************/
+
+
+/* Standaardstijlen voor lichte modus */
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #fff; /* Achtergrondkleur voor lichte modus */
+    color: #000; /* Tekstkleur voor lichte modus */
+}
+
+
+
+/* Standaardstijlen voor knoppen in lichte modus */
+a.button {
+    line-height: 1.75em;
+    align-items: center;
+    background: #000; /* Achtergrondkleur voor knoppen in lichte modus */
+    color: #fff; /* Tekstkleur voor knoppen in lichte modus */
+    text-decoration: none;
+    border-radius: 1.875em;
+    padding: 0.375em 1.25em;
+    font-size: 1em;
+}
+
+
+
+
+/* Donkere modus */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000; /* Achtergrondkleur voor donkere modus */
+        color: #fff; /* Tekstkleur voor donkere modus */
+    }
+
+    /* Aangepaste stijlen voor knoppen in donkere modus */
+    a.button {
+        background: #fff; /* Achtergrondkleur voor knoppen in donkere modus */
+        color: #000; /* Tekstkleur voor knoppen in donkere modus */
+    }
+
+
+    /* Voeg hier eventuele andere aangepaste stijlen toe voor donkere modus */
+}
+
+
+
+/************************************************* Header *************************************************/
 
 header {
     background-color: white;
     display: flex;
-    Justify-content: space-between;
-    padding: 0 14px 0 16px;
-    max-width: 1920px;
-    max-height: 60px;
+    justify-content: space-between;
+    padding: 0 0.875em 0 1em;
+    /* 14px / 16px = 0.875em, 16px / 16px = 1em */
+    max-width: 120em;
+    /* 1920px / 16px = 120em */
+    max-height: 3.75em;
+    /* 60px / 16px = 3.75em */
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-
 }
 
 header nav ul li {
-    padding: 8px;
+    padding: 0.5em;
+    /* 8px / 16px = 0.5em */
     display: flex;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 6.25em;
+    /* 100px / 16px = 6.25em */
     background: transparent;
 }
 
 .pre-nav-design-icon {
     color: #111;
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    /* 24px / 16px = 1.5em */
+    height: 1.5em;
+    /* 24px / 16px = 1.5em */
 }
 
 .pre-logo-svg {
@@ -54,47 +147,54 @@ header nav ul li {
 }
 
 .pre-logo-link {
-    height: 59px;
-    width: 59px;
-    margin: 1px 0;
+    height: 3.6875em;
+    /* 59px / 16px = 3.6875em */
+    width: 3.6875em;
+    /* 59px / 16px = 3.6875em */
+    margin: 0.0625em 0;
+    /* 1px / 16px = 0.0625em */
     color: black;
 }
 
-/* Banner/carrousel */
+/************************************************* Banner/carrousel *************************************************/
 
 #banner {
     height: auto;
-    min-height: 58px;
-    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+    min-height: 3.625em;
+    /* 58px / 16px = 3.625em */
+    box-shadow: inset 0 -0.0625em 0 0 #e5e5e5;
+    /* 1px / 16px = 0.0625em */
     position: relative;
     background: #f5f5f5;
-    padding-top: 10px;
+    padding-top: 0.625em;
+    /* 10px / 16px = 0.625em */
     overflow: hidden;
 }
 
 #banner ul {
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     text-align: center;
     display: flex;
     transition: transform 1s;
-    /* Dit zorgt voor de soepele verschuiving */
     overflow: hidden;
 }
 
 #banner ul li>p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
+    /* 16px / 16px = 1em */
     line-height: 1;
     display: block;
     vertical-align: middle;
-    margin: 0px;
+    margin: 0;
 }
 
 #banner ul li section {
     display: block;
-    font-size: 12px;
+    font-size: 0.75em;
+    /* 12px / 16px = 0.75em */
     line-height: 2;
 }
 
@@ -105,48 +205,117 @@ header nav ul li {
 #banner li {
     display: none;
     flex: 0 0 100%;
-    /* Dit zorgt ervoor dat elk item 100% van de containerbreedte inneemt */
-    /white-space: nowrap;
-    /* Zorg ervoor dat de inhoud van het item niet naar de volgende regel gaat */
+    white-space: nowrap;
 }
 
+/************************************************* H1 met link naar shop *************************************************/
+
+body main>section:nth-of-type(2) {
+    margin: 3em 0.75em 0 0.75em;
+    /* 48px / 16px = 3em, 12px / 16px = 0.75em */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body main>section:nth-of-type(2) p {
+    text-align: center;
+}
+
+/************************************************* VIDEO *************************************************/
+
+body main>section:nth-of-type(3) {
+    margin-top: 3em;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 31.25em;
+    /* Of een andere gewenste hoogte */
+    background: rgba(0, 0, 0, 0.5);
+    /* Achtergrondkleur overlay als je dat wilt */
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#videoToggleButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    /* Positie linksonder */
+    position: absolute;
+    left: 10px;
+    /* 10px uit de linkerrand */
+    bottom: 10px;
+    /* 10px vanaf de onderkant */
+}
+
+#videoToggleButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#videoToggleButton svg {
+    fill: white;
+    /* Kleur van de SVG */
+}
+
+/************************************************* Carrousel trends *************************************************/
+
+body main>section:nth-of-type(4) h2 {
+    display: none;
+}
+
+body main>section:nth-of-type(4) ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0em 0em 1.875em 1.5em;
+    overflow: auto;
+}
+
+body main>section:nth-of-type(4) ul li {
+    margin-right: 0.75em;
+}
+
+/* body main>section:nth-of-type(4) ul li img {
+    height: 15em;
+    width: 15em;
+    object-fit: cover;
+} */
+
+/************************************************* Footer *************************************************/
 
 
 /* CSS voor de footer-navigatie met een UL */
 footer ul {
-  background-color: black; /* Achtergrondkleur zwart */
-  list-style-type: none; /* Verwijder de standaard lijststijl (opsommingsteken) */
-  padding: 0; /* Verwijder standaard padding van de UL */
+    background-color: black;
+    list-style-type: none;
+    padding: 0;
 }
 
 footer ul li {
-  margin: 0;
+    margin: 0;
 }
 
 footer ul li a {
-  color: white; /* Tekstkleur wit */
-  text-decoration: none; /* Verwijder onderstreping van links */
-  padding: 10px; /* Voeg wat padding toe voor ruimte rondom de links */
+    color: white;
+    text-decoration: none;
+    padding: 0.625em;
+    /* 10px / 16px = 0.625em */
 }
 
 footer ul li a:hover {
-  text-decoration: underline; /* Voeg een onderstreping toe bij hover */
+    text-decoration: underline;
 }
-
-
-}
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-    /* startje */
-    --color-text: #111;
-    --color-background: #eee;
-}
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */

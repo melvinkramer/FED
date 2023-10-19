@@ -2,8 +2,11 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike hompagina</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -13,7 +16,8 @@
                 <path fill="currentColor" fill-rule="evenodd"
                     d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
                     clip-rule="evenodd"></path>
-            </svg></a>
+            </svg>
+        </a>
         <nav>
             <ul>
                 <li><a href="https://www.nike.com"><svg aria-hidden="true" class="pre-nav-design-icon" focusable="false"
@@ -68,49 +72,51 @@
                 </li>
             </ul>
         </section>
+        <section>
+            <h1>Nike Tech</h1>
+            <p>Ontworpen volgens de exacte specificaties van topatleten</p> 
+            <a class="button" href="https://www.nike.com"
+                target="_blank">Bezoek Nike</a>
+        </section>
 
-        <ul>
-            <li>
-                <p>Nike Tech</p>
-                <h3>Ontworpen volgens de exacte specificaties van topatleten</h3> <button><a href="https://www.nike.com"
-                        target="_blank">Bezoek Nike</a></button>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <h2>Ontdek meer</h2>
-                <a href="https://www.nike.com" target="_blank">
-                    <button>bekijken</button>
-                    <div class="video-container"> <video controls>
-                            <source src="video.mp4" type="video/mp4"> Your browser does not support the video tag.
-                        </video> </div>
-                </a>
-            </li>
-        </ul>
+        <section>
+            <video autoplay muted loop id="backgroundVideo">
+                <source src="images/nike tech video.mp4" type="video/mp4">
+            </video>
+            <section>
+                <button id="videoToggleButton" onclick="toggleVideo()">
+                    <!-- Play Icon -->
+                    <svg id="playIcon" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                    
+                    <!-- Pause Icon (standaard verborgen) -->
+                    <svg id="pauseIcon" width="24" height="24" viewBox="0 0 24 24" style="display: none;">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
+                    </svg>
+                </button>
+            </section>
+        </section>
+
         <section>
             <h2> Carrousel trends </h2>
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-item"> <img src="image1.jpg" alt=“Tech “Fleece tops>
-                        <h3> Tech fleece tops </h3>
-                    </div>
-                    <div class="carousel-item"> <img src="image2.jpg" alt=“Tech “Fleece broeken>
-                        <h3> Tech fleece broeken </h3>
-                    </div>
-                    <div class="carousel-item"> <img src="image3.jpg" alt=“Matchende “sets>
-                        <h3> Matchende sets </h3>
-                    </div>
-                    <div class="carousel-item"> <img src="image3.jpg" alt=“Voetbalcultuur”>
-                        <h3> Voetbalcultuur </h3>
-                    </div>
-                    <div class="carousel-item"> <img src="image3.jpg" alt=“Fleece”>
-                        <h3> Fleece </h3>
-                    </div>
-                    <div class="carousel-item"> <img src="image3.jpg" alt=“Airmax”>
-                        <h3> Airmax </h3>
-                    </div>
-                </div>
-            </div>
+            <ul>
+                <li class="carousel-item"> <img src="images/nike_trends_1.png" alt=“Tech “Fleece tops>
+                    <h3> Tech fleece tops </h3>
+                </li>
+                <li class="carousel-item"> <img src="images/nike_trends_2.png" alt=“Tech “Fleece broeken>
+                    <h3> Tech fleece broeken </h3>
+                </li>
+                <li class="carousel-item"> <img src="images/nike_trends_3.png" alt=“Matchende “sets>
+                    <h3> Matchende sets </h3>
+                </li>
+                <li class="carousel-item"> <img src="images/nike_trends_4.png" alt=“Tech “Fleece tops>
+                    <h3> Tech fleece tops </h3>
+                </li>
+                <li class="carousel-item"> <img src="images/nike_trends_5.png" alt=“Tech “Fleece broeken>
+                    <h3> Tech fleece broeken </h3>
+                </li>
+            </ul>
         </section>
         <section>
             <h2> Carrousel trending producten </h2>

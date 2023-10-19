@@ -108,12 +108,23 @@ De kansen op het verbeteren van de website zit hem met name in het verbeteren va
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  
+  Vooraf heb ik met name de HTML uitgeschreven en een klein begin gemaakt met de CSS. Omdat Internetstandaarden inmiddels al weer een tijd geleden is (5 jaar) was dit voor mij echt weer even omschakelen. Ik heb een kleine recap gedaan om de HTML weer even op te frissen en merkte gelijk dat er weer van alles boven kwan drijven. Vervolgens ben ik begonnen met het schrijven van de HTML. Dit ging mij vrij goed af. Ook heb ik een begin gemaakt met de header en de SVG icons toegevoegd die dienen als navigatie. Dit was wat lastig, maar na wat vragen en hulp van mijn trouwe partner ChatGPT ging mij dit eigenlijk vrij goed af. Bij het goed plaatsen heb ik ook even hulp gevraagd van een student begeleider die mij op weg hielp met het vormgeven van de eerste icon. Vervolgens heb ik op basis daarvan de rest zelf gemaakt en ben ik tevreden met de eerste oplevering tijdens de eerste meeting.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Wat ik tijdens de eerste meeting wou weten waren de volgende punten:
+
+- Of de H1 in de header of de main moet komen wanneer deze verborgen is op de website
+
+    Antwoord: Het is gebruikelijk om dit in de main sectie te plaatsen.
+    
+- of ik het logo van de website kan weergeven als de H1 
+
+Dit is niet handig om te doen. Dit komt omdat het een visueel merk is en niet een beschrijving is van de webpagina.
+
+- algemene check HTML en of de carrousels goed staan
+
+Ik maakte gebruik van Classes, deze heb ik veranderd naar sections.
+
 
 </details>
 
@@ -127,27 +138,29 @@ De kansen op het verbeteren van de website zit hem met name in het verbeteren va
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze week ben ik bezig geweest met een carroussel waarbij ik een stukje javascript heb geschreven. Ik heb hierbij een interval toegevoegd aan 3 verschillende list items. Ik vond het vrij lastig om de list items goed te stijlen maar met veel oefenen is het mij toch gelukt. Ik kan niet ontkennen dat er gevloekt is tijdens het maken van dit proces. Achteraf was ik toch wel wat verbaasd dat de code die ik hier voor nodig heb vrij weinig is. Ik weet nu goed hoe het werkt alleen moet wel hulp hebben van bronnen om het ook daadwerkelijk te schrijven.
+  
+  <img src="readme-images/Screenshotcodeweek2.png" width="375px" alt="CodeWeek2">
+  
+  <img src="readme-images/Screenshotwebsiteweek2.png" width="375px" alt="websiteWeek2">
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Hoe ik de tekst passend krijg binnen een carrousel (werkt nog niet goed).  | De content op de website van Nike wat nu live staat veranderd elke dag waardoor bepaalde afbeeldingen die ik nu toevoeg niet meer aansluiten op de eerder geschreven content. Wat raad je aan om te doen. | Ik kan de video niet uit de nike website halen. Hoe krijg ik hem toch op mijn website           
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+In de meeting van vandaag hebben we samen de websites doorgenomen. Ik heb een aantal vragen opgestelt over met name de positionering van de carroussel in mijn header. Ook had ik een paar foutmeldingen die ik even wou doornemen. Ik wist dat het een syntax fout was maar kon hem niet vinden. Na wat hulp van Sanne en ons groepje hebben we het samen gevonden. Er mistte een haakje.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+Ook had ik een vraag over het vinden van de video die ik op de website wil plaatsen. Ik kon de bron hiervan nergens uit de code halen. Ook de studentbegeleider is het niet gelukt de code te vinden. Na goed zoeken bleek de video aangeroepen te worden vanuit een API waar ik niet bij kom. Ik heb dit vervolgens opgelost door een screenvideo te maken van de video van Nike, en deze toegevoegd aan de website.
 
+Verder had ik niet zoveel vragen omdat alles werkte en het tot op heden goed ging. Ik steek erg veel tijd in het maken van de website en stel tussentijds vragen aan Sanne of een van de student begeleiders via teams als ik het niet helemaal begrijp.
+
+Over het algemeen was de meeting zeer productief en ben ik goed op weg met de website.
 </details>
 
 
