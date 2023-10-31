@@ -2,8 +2,7 @@
 
 @font-face {
     font-family: "Nike-Futura";
-    src: url('../fonts/Nike-Futura.woff2') format('woff2'),
-        /* Voeg eventueel andere CSS-eigenschappen zoals font-weight en font-style toe */
+    src: url('../fonts/Nike-Futura.woff2') format('woff2');
 }
 
 body {
@@ -13,11 +12,11 @@ body {
 
 h1 {
     font-family: "Nike-Futura";
+    src: url('../fonts/Nike-Futura.woff2') format('woff2');
 }
 
 body h1 {
     font-size: 3em;
-    /* 48px / 16px = 3em */
     text-transform: uppercase;
     font-weight: 700;
     margin: 0em;
@@ -32,9 +31,7 @@ a.button {
     border-radius: 1.875em;
     /* 30px / 16px = 1.875em */
     padding: 0.375em 1.25em;
-    /* 6px / 16px = 0.375em, 20px / 16px = 1.25em */
     font-size: 1em;
-    /* 16px / 16px = 1em */
 }
 
 a {
@@ -117,15 +114,15 @@ a.button {
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-    width: 300px;
+    padding-top: 0.234375em; 
+    width: 18.75em; 
     display: none;
 }
 
 .side-nav a {
-    padding: 10px 15px 10px 32px;
+    padding: 0.625em 0.9375em 0.625em 2em; 
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5625em; 
     color: #000;
     display: block;
     transition: 0.3s;
@@ -142,16 +139,16 @@ a.button {
 }
 
 .blur-effect {
-    filter: blur(8px);
+    filter: blur(0.5em); 
 }
 
 .closebtn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 20px;
+    top: 0.625em; 
+    right: 0.625em; 
+    padding: 1.25em; 
     color: white;
-    font-size: 30px;
+    font-size: 1.875em;
     text-decoration: none;
     z-index: 2;
 }
@@ -169,15 +166,12 @@ a.button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Zwarte achtergrond met 50% transparantie */
-    z-index: 1;
-    /* Zorg ervoor dat het onder het zijmenu zit */
-    cursor: pointer;
-    /* Laat een klikbare cursor zien */
-    filter: blur(8px);
-    /* Voeg het blur-effect toe */
+    background-color: rgba(0, 0, 0, 0.5); /* Zwarte achtergrond met 50% transparantie */
+    z-index: 1; /* Zorg ervoor dat het onder het zijmenu zit */
+    cursor: pointer; /* Laat een klikbare cursor zien */
+    filter: blur(0.5em); /* Voeg het blur-effect toe*/
 }
+
 
 /************************************************* Header *************************************************/
 
@@ -186,11 +180,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 0.875em 0 1em;
-    /* 14px / 16px = 0.875em, 16px / 16px = 1em */
     max-width: 120em;
-    /* 1920px / 16px = 120em */
     max-height: 3.75em;
-    /* 60px / 16px = 3.75em */
 }
 
 header nav ul {
@@ -200,20 +191,16 @@ header nav ul {
 
 header nav ul li {
     padding: 0.5em;
-    /* 8px / 16px = 0.5em */
     display: flex;
     align-items: center;
     border-radius: 6.25em;
-    /* 100px / 16px = 6.25em */
     background: transparent;
 }
 
 .pre-nav-design-icon {
     color: #111;
     width: 1.5em;
-    /* 24px / 16px = 1.5em */
     height: 1.5em;
-    /* 24px / 16px = 1.5em */
 }
 
 .pre-logo-svg {
@@ -224,11 +211,8 @@ header nav ul li {
 
 .pre-logo-link {
     height: 3.6875em;
-    /* 59px / 16px = 3.6875em */
     width: 3.6875em;
-    /* 59px / 16px = 3.6875em */
     margin: 0.0625em 0;
-    /* 1px / 16px = 0.0625em */
     color: black;
 }
 
@@ -237,13 +221,10 @@ header nav ul li {
 #banner {
     height: auto;
     min-height: 3.625em;
-    /* 58px / 16px = 3.625em */
     box-shadow: inset 0 -0.0625em 0 0 #e5e5e5;
-    /* 1px / 16px = 0.0625em */
     position: relative;
     background: #f5f5f5;
     padding-top: 0.625em;
-    /* 10px / 16px = 0.625em */
     overflow: hidden;
 }
 
@@ -260,7 +241,6 @@ header nav ul li {
 #banner ul li>p {
     font-weight: 500;
     font-size: 1em;
-    /* 16px / 16px = 1em */
     line-height: 1;
     display: block;
     vertical-align: middle;
@@ -270,7 +250,6 @@ header nav ul li {
 #banner ul li section {
     display: block;
     font-size: 0.75em;
-    /* 12px / 16px = 0.75em */
     line-height: 2;
 }
 
@@ -287,7 +266,6 @@ header nav ul li {
 
 body main>section:nth-of-type(2) {
     margin: 3em 0.75em 0 0.75em;
-    /* 48px / 16px = 3em, 12px / 16px = 0.75em */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,7 +284,6 @@ body main>section:nth-of-type(3) {
     overflow: hidden;
     width: 100%;
     height: 31.25em;
-    /* Of een andere gewenste hoogte */
     background: rgba(0, 0, 0, 0.5);
     /* Achtergrondkleur overlay als je dat wilt */
 }
@@ -324,17 +301,15 @@ body main>section:nth-of-type(3) {
 #videoToggleButton {
     background-color: rgba(0, 0, 0, 0.6);
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 0.625em 0.9375em;
+    border-radius: 0.3125em;
     cursor: pointer;
     transition: background-color 0.3s;
 
     /* Positie linksonder */
     position: absolute;
-    left: 10px;
-    /* 10px uit de linkerrand */
-    bottom: 10px;
-    /* 10px vanaf de onderkant */
+    left: 0.625em;
+    bottom: 0.625em;
 }
 
 #videoToggleButton:hover {
@@ -364,7 +339,7 @@ body main>section:nth-of-type(4) ul li {
     margin-right: 0.75em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5em) {
 
     /* Zorgt ervoor dat hij onder de 600px een kleine tegel toont */
     body main>section:nth-of-type(4) ul li img {
@@ -386,16 +361,6 @@ body main>section:nth-of-type(5) section p {
     margin-top: 0.35em;
 }
 
-/* body main>section:nth-of-type(5)>section {
-    display: inline-block;
-    float: inline-start;
-}
-
-
-body main>section:nth-of-type(5)>p {
-    display: inline-block;
-    float: inline-end;
-} */
 
 body main>section:nth-of-type(5) ul {
     display: flex;
@@ -422,7 +387,6 @@ body main>section:nth-of-type(5) ul li {
 /************************************************* Footer *************************************************/
 
 
-/* CSS voor de footer-navigatie met een UL */
 footer ul {
     background-color: black;
     list-style-type: none;
@@ -437,7 +401,6 @@ footer ul li a {
     color: white;
     text-decoration: none;
     padding: 0.625em;
-    /* 10px / 16px = 0.625em */
 }
 
 footer ul li a:hover {

@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Verhalen
-  <img src="readme-images/Verhalennike.jpg" width="375px" alt="Verhalen">
+  <img src="readme-images/inlog.png" width="375px" alt="inlog">
  
 </details>
 
@@ -75,10 +75,12 @@ De kansen op het verbeteren van de website zit hem met name in het verbeteren va
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Indeling.png" width="375px" alt="Indelingwebsite">
+<img src="readme-images/Kopjes.png" width="375px" alt="teksten">
+
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="readme-images/Uitschuifmenu.png" width="375px" alt="menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
