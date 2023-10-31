@@ -80,10 +80,10 @@ De kansen op het verbeteren van de website zit hem met name in het verbeteren va
 
 
   ### dynamisch deel (bijv menu): 
-<img src="readme-images/Uitschuifmenu.png" width="375px" alt="menu">
+<img src="readme-images/uitschuifmenu.png" width="375px" alt="menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="readme-images/items.png" width="375px" alt="menu">
 
 </details>
 
