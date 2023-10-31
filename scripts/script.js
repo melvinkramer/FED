@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // *************************************************  Video pauze
+document.getElementById("videoToggleButton").addEventListener("click", toggleVideo);
+
 function toggleVideo() {
     const video = document.getElementById("backgroundVideo");
     const playIcon = document.getElementById("playIcon");
@@ -44,3 +46,22 @@ function toggleVideo() {
         pauseIcon.style.display = "none";
     }
 }
+
+// *************************************************  nav
+
+function openMenu() {
+    const menu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+    
+    menu.style.display = "block";
+    overlay.style.display = "block";
+  }
+  
+  function closeMenu() {
+    const menu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+    
+    menu.style.display = "none";
+    overlay.style.display = "none";
+  }
+  

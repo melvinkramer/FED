@@ -39,10 +39,21 @@
                                 d="M12 3a4.5 4.5 0 00-4.5 4.5H9a3 3 0 013-3V3zM7.5 7.5A4.5 4.5 0 0012 12v-1.5a3 3 0 01-3-3H7.5zM12 12a4.5 4.5 0 004.5-4.5H15a3 3 0 01-3 3V12zm4.5-4.5A4.5 4.5 0 0012 3v1.5a3 3 0 013 3h1.5zM4.5 21v-3H3v3h1.5zm0-3a3 3 0 013-3v-1.5A4.5 4.5 0 003 18h1.5zm3-3h9v-1.5h-9V15zm9 0a3 3 0 013 3H21a4.5 4.5 0 00-4.5-4.5V15zm3 3v3H21v-3h-1.5z">
                             </path>
                         </svg></a></li>
-                <li><a href="https://www.nike.com"><svg aria-hidden="true" class="pre-nav-design-icon" focusable="false"
-                            viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+                <li><a href="#" onclick="openMenu()"><svg aria-hidden="true" class="pre-nav-design-icon"
+                            focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
                             <path stroke="currentColor" stroke-width="1.5" d="M21 5.25H3M21 12H3m18 6.75H3"></path>
                         </svg></a></li>
+                <section id="overlay" onclick="closeMenu()"></section>
+
+                <section id="sideMenu" class="side-nav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                    <!-- Je menu items gaan hier -->
+                    <a href="#">Nieuw en uitgelicht</a>
+                    <a href="#">Heren</a>
+                    <a href="#">Dames</a>
+                    <!-- enz. -->
+                </section>
+
             </ul>
         </nav>
     </header>
@@ -52,7 +63,7 @@
                 <li>
                     <p>Tot wel 50% korting</p>
                     <section>
-                        <p>De seizoenspromotie is begonnen. 
+                        <p>De seizoenspromotie is begonnen.
                             <a href="https://www.nike.com/nl/w/sale-3yaep">Shop</a></p>
                     </section>
                 </li>
@@ -65,18 +76,18 @@
                 <li>
                     <p>Gratis verzending en retourneren</p>
                     <section>
-                        <p>Nike members krijgen gratis verzending en kunnen binnen 30 dagen gratis retourneren. 
+                        <p>Nike members krijgen gratis verzending en kunnen binnen 30 dagen gratis retourneren.
                             <a href="https://www.nike.com/nl/help"><strong>Meer info</strong>
-                            </a><strong> </strong><a href="https://www.nike.com/nl/membership"><strong>Join Us</strong></a></p>
+                            </a><strong> </strong><a href="https://www.nike.com/nl/membership"><strong>Join
+                                    Us</strong></a></p>
                     </section>
                 </li>
             </ul>
         </section>
         <section>
             <h1>Nike Tech</h1>
-            <p>Ontworpen volgens de exacte specificaties van topatleten</p> 
-            <a class="button" href="https://www.nike.com"
-                target="_blank">Bezoek Nike</a>
+            <p>Ontworpen volgens de exacte specificaties van topatleten</p>
+            <a class="button" href="https://www.nike.com" target="_blank">Bezoek Nike</a>
         </section>
 
         <section>
@@ -84,18 +95,19 @@
                 <source src="images/nike tech video.mp4" type="video/mp4">
             </video>
             <section>
-                <button id="videoToggleButton" onclick="toggleVideo()">
+                <button id="videoToggleButton">
                     <!-- Play Icon -->
                     <svg id="playIcon" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"></path>
                     </svg>
-                    
+
                     <!-- Pause Icon (standaard verborgen) -->
                     <svg id="pauseIcon" width="24" height="24" viewBox="0 0 24 24" style="display: none;">
                         <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
                     </svg>
                 </button>
             </section>
+
         </section>
 
         <section>
@@ -115,6 +127,60 @@
                 </li>
                 <li class="carousel-item"> <img src="images/nike_trends_5.png" alt=“Tech “Fleece broeken>
                     <h3> Tech fleece broeken </h3>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Trending deze week</h2>
+            <ul>
+                <li class="carousel-item"> <img src="images/Schoen-1.jpg" alt=“Tech “Fleece tops>
+                    <section>
+                        <h3> Tech fleece tops </h3>
+                        <p>Herenschoen</p>
+                    </section>
+                    <p>€ 94,99</p>
+                </li>
+                <li class="carousel-item"> <img src="images/Schoen-2.jpg" alt=“Tech “Fleece tops>
+                    <section>
+                        <h3> Tech fleece tops </h3>
+                        <p>Herenschoen</p>
+                    </section>
+                    <p>€ 94,99</p>
+                </li>
+                <li class="carousel-item"> <img src="images/Schoen-3.jpg" alt=“Tech “Fleece tops>
+                    <section>
+                        <h3> Tech fleece tops </h3>
+                        <p>Herenschoen</p>
+                    </section>
+                    <p>€ 94,99</p>
+                </li>
+                <li class="carousel-item"> <img src="images/Schoen-4.jpg" alt=“Tech “Fleece tops>
+                    <section>
+                        <h3> Tech fleece tops </h3>
+                        <p>Herenschoen</p>
+                    </section>
+                    <p>€ 94,99</p>
+                </li>
+                <li class="carousel-item"> <img src="images/Schoen-5.jpg" alt=“Tech “Fleece tops>
+                    <section>
+                        <h3> Tech fleece tops </h3>
+                        <p>Herenschoen</p>
+                    </section>
+                    <p>€ 94,99</p>
+                </li>
+                <li class="carousel-item"> <img src="images/Schoen-6.jpg" alt=“Tech “Fleece tops>
+                    <section>
+                        <h3> Tech fleece tops </h3>
+                        <p>Herenschoen</p>
+                    </section>
+                    <p>€ 94,99</p>
+                </li>
+                <li class="carousel-item"> <img src="images/Schoen-7.jpg" alt=“Tech “Fleece tops>
+                    <section>
+                        <h3> Tech fleece tops </h3>
+                        <p>Herenschoen</p>
+                    </section>
+                    <p>€ 94,99</p>
                 </li>
             </ul>
         </section>

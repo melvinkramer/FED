@@ -1,25 +1,17 @@
 /************************************************* Algemeen *************************************************/
 
 @font-face {
-  font-family: "Nike-Futura";
-  src: url('../fonts/Nike-Futura.woff2') format('woff2'),
-  /* Voeg eventueel andere CSS-eigenschappen zoals font-weight en font-style toe */
+    font-family: "Nike-Futura";
+    src: url('../fonts/Nike-Futura.woff2') format('woff2'),
+        /* Voeg eventueel andere CSS-eigenschappen zoals font-weight en font-style toe */
 }
-
-}
-
-
 
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
     font-family: "Nike-Futura";
 }
 
@@ -62,8 +54,10 @@ a {
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #fff; /* Achtergrondkleur voor lichte modus */
-    color: #000; /* Tekstkleur voor lichte modus */
+    background-color: #fff;
+    /* Achtergrondkleur voor lichte modus */
+    color: #000;
+    /* Tekstkleur voor lichte modus */
 }
 
 
@@ -72,8 +66,10 @@ body {
 a.button {
     line-height: 1.75em;
     align-items: center;
-    background: #000; /* Achtergrondkleur voor knoppen in lichte modus */
-    color: #fff; /* Tekstkleur voor knoppen in lichte modus */
+    background: #000;
+    /* Achtergrondkleur voor knoppen in lichte modus */
+    color: #fff;
+    /* Tekstkleur voor knoppen in lichte modus */
     text-decoration: none;
     border-radius: 1.875em;
     padding: 0.375em 1.25em;
@@ -87,21 +83,101 @@ a.button {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #000; /* Achtergrondkleur voor donkere modus */
-        color: #fff; /* Tekstkleur voor donkere modus */
+        background-color: #000;
+        /* Achtergrondkleur voor donkere modus */
+        color: #fff;
+        /* Tekstkleur voor donkere modus */
     }
 
     /* Aangepaste stijlen voor knoppen in donkere modus */
     a.button {
-        background: #fff; /* Achtergrondkleur voor knoppen in donkere modus */
-        color: #000; /* Tekstkleur voor knoppen in donkere modus */
+        background: #fff;
+        /* Achtergrondkleur voor knoppen in donkere modus */
+        color: #000;
+        /* Tekstkleur voor knoppen in donkere modus */
+    }
+
+    #banner {
+        color: #000;
     }
 
 
     /* Voeg hier eventuele andere aangepaste stijlen toe voor donkere modus */
 }
 
+/************************************************* nav *************************************************/
 
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    width: 300px;
+    display: none;
+}
+
+.side-nav a {
+    padding: 10px 15px 10px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #666666;
+}
+
+/* Stijl voor de inhoud wanneer het menu is geopend */
+#mainContent {
+    position: relative;
+    z-index: 0;
+}
+
+.blur-effect {
+    filter: blur(8px);
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.closebtn:hover {
+    color: #f1f1f1;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Zwarte achtergrond met 50% transparantie */
+    z-index: 1;
+    /* Zorg ervoor dat het onder het zijmenu zit */
+    cursor: pointer;
+    /* Laat een klikbare cursor zien */
+    filter: blur(8px);
+    /* Voeg het blur-effect toe */
+}
 
 /************************************************* Header *************************************************/
 
@@ -205,7 +281,6 @@ header nav ul li {
 #banner li {
     display: none;
     flex: 0 0 100%;
-    white-space: nowrap;
 }
 
 /************************************************* H1 met link naar shop *************************************************/
@@ -289,11 +364,60 @@ body main>section:nth-of-type(4) ul li {
     margin-right: 0.75em;
 }
 
-/* body main>section:nth-of-type(4) ul li img {
-    height: 15em;
-    width: 15em;
-    object-fit: cover;
+@media only screen and (max-width: 600px) {
+
+    /* Zorgt ervoor dat hij onder de 600px een kleine tegel toont */
+    body main>section:nth-of-type(4) ul li img {
+        height: 15em;
+        width: 15em;
+        object-fit: cover;
+    }
+}
+
+/************************************************* Carrousel product *************************************************/
+
+body main>section:nth-of-type(5) h3 {
+    font-weight: 400;
+    margin-bottom: 0em;
+}
+
+body main>section:nth-of-type(5) section p {
+    font-weight: 400;
+    margin-top: 0.35em;
+}
+
+/* body main>section:nth-of-type(5)>section {
+    display: inline-block;
+    float: inline-start;
+}
+
+
+body main>section:nth-of-type(5)>p {
+    display: inline-block;
+    float: inline-end;
 } */
+
+body main>section:nth-of-type(5) ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0em 0em 1.875em 1.5em;
+    overflow: auto;
+}
+
+body main>section:nth-of-type(5) ul li {
+    margin-right: 0.75em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Zorgt ervoor dat hij onder de 600px een kleine tegel toont */
+    body main>section:nth-of-type(5) ul li img {
+        height: 15em;
+        width: 15em;
+        object-fit: cover;
+    }
+}
 
 /************************************************* Footer *************************************************/
 
