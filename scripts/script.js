@@ -1,25 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let items = document.querySelectorAll("#banner li");
-    let currentIndex = 0;
+// Banner Carrousel: Deze code creëert een eenvoudige beeldcarrousel die automatisch door verschillende items (lijsten) bladert.
 
-    // Function to hide all items
+// Bron 1 - Door middel van Chat GPT heb ik een basiscode gekregen en passend gemaakt in mijn code
+
+document.addEventListener("DOMContentLoaded", function () {
+    let items = document.querySelectorAll("#banner li"); // Selecteer alle lijstitems
+    let currentIndex = 0; // Huidige index van het getoonde item
+
+    // Verberg alle items
     function hideAllItems() {
-        items.forEach(function(item) {
+        items.forEach(function (item) {
             item.style.display = 'none';
         });
     }
 
-    // Function to show the current item
+    // Toon het huidige item
     function showCurrentItem() {
         hideAllItems();
         items[currentIndex].style.display = 'block';
     }
 
-    // Initially show the first item
+    // Toon het eerste item bij het laden van de pagina
     showCurrentItem();
 
-    // Change the item every 3 seconds
-    setInterval(function() {
+    // Verander het getoonde item elke 3 seconden
+    setInterval(function () {
         currentIndex++;
         if (currentIndex >= items.length) {
             currentIndex = 0;
@@ -28,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
 });
 
-// *************************************************  Video pauze
+// Video Pauze/Toggle: Deze code zorgt ervoor dat een video kan worden afgespeeld en gepauzeerd door te klikken op een knop.
+// Bron 2 - Door middel van Chat GPT heb ik een basiscode gekregen en een pauze/play button toegevoegd aan de video.
 document.getElementById("videoToggleButton").addEventListener("click", toggleVideo);
 
 function toggleVideo() {
@@ -37,31 +42,49 @@ function toggleVideo() {
     const pauseIcon = document.getElementById("pauseIcon");
 
     if (video.paused) {
-        video.play();
-        playIcon.style.display = "none";
-        pauseIcon.style.display = "inline-block";
+        video.play(); // Speel de video af
+        playIcon.style.display = "none"; // Verberg het afspeelicoon
+        pauseIcon.style.display = "inline-block"; // Toon het pauzeicoon
     } else {
-        video.pause();
-        playIcon.style.display = "inline-block";
-        pauseIcon.style.display = "none";
+        video.pause(); // Pauzeer de video
+        playIcon.style.display = "inline-block"; // Toon het afspeelicoon
+        pauseIcon.style.display = "none"; // Verberg het pauzeicoon
     }
 }
 
-// *************************************************  nav
+
+// Wacht tot de document volledig geladen is
+document.addEventListener("DOMContentLoaded", function () {
+    // Navigatiemenu: Deze code opent en sluit een zijmenu met behulp van een overlay.
+
+    // Voeg een click event listener toe aan de open menu knop
+    document.getElementById("openMenuButton").addEventListener("click", function () {
+        openMenu();
+    });
+
+    // Voeg een click event listener toe aan de close menu knop
+    document.getElementById("closeMenuButton").addEventListener("click", function () {
+        closeMenu();
+    });
+
+    // Optioneel: Voeg een click event listener toe aan de overlay om het menu te sluiten
+    document.getElementById("overlay").addEventListener("click", function () {
+        closeMenu();
+    });
+});
 
 function openMenu() {
     const menu = document.getElementById("sideMenu");
     const overlay = document.getElementById("overlay");
-    
-    menu.style.display = "block";
-    overlay.style.display = "block";
-  }
-  
-  function closeMenu() {
+
+    menu.style.display = "block"; // Toon het zijmenu
+    overlay.style.display = "block"; // Toon de overlay
+}
+
+function closeMenu() {
     const menu = document.getElementById("sideMenu");
     const overlay = document.getElementById("overlay");
-    
-    menu.style.display = "none";
-    overlay.style.display = "none";
-  }
-  
+
+    menu.style.display = "none"; // Verberg het zijmenu
+    overlay.style.display = "none"; // Verberg de overlay
+}

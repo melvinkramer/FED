@@ -149,8 +149,7 @@ Ik maakte gebruik van Classes, deze heb ik veranderd naar sections.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
+Vragen voor de meeting:
   | ---            | ---                | ---          | ---              |
   | Hoe ik de tekst passend krijg binnen een carrousel (werkt nog niet goed).  | De content op de website van Nike wat nu live staat veranderd elke dag waardoor bepaalde afbeeldingen die ik nu toevoeg niet meer aansluiten op de eerder geschreven content. Wat raad je aan om te doen. | Ik kan de video niet uit de nike website halen. Hoe krijg ik hem toch op mijn website           
 
@@ -206,11 +205,11 @@ Ik heb tijdens mijn onderzoek naar de website mij een beetje verkeken op de comp
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+Vragen voor de meeting:
 
 | melvin         | edward             | jesse        | sten             |
   | ---            | ---                | ---          | ---              |
-  | Voor de video met de pauze/play button heb ik een class en ID toegevoegd. Is dat oké? | Hoe zorg ik ervoor dat de afbeeldingen in de carroussel meeschalen met de website (voor desktop)| Ik heb een link wat een button moet zijn. Kan ik hiervoor een class gebruiken? Wat is het alternatief?    | Mijn fonts laden niet in Github, wat is hier de oorzaak van    |
+  | Voor de video met de pauze/play button heb ik een class en ID toegevoegd. Is dat oké?, Hoe zorg ik ervoor dat de afbeeldingen in de carroussel meeschalen met de website (voor desktop), Ik heb een link wat een button moet zijn. Kan ik hiervoor een class gebruiken? Wat is het alternatief?, Mijn fonts laden niet in Github, wat is hier de oorzaak van 
  
 
 

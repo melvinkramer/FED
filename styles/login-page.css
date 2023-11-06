@@ -1,0 +1,97 @@
+/* Algemene opmaak voor het hele document */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Stelt het lettertype in voor de hele webpagina. */
+    padding: 50px; /* Voegt een vulling (marges) van 50px toe aan alle zijden van het body-element. */
+}
+
+/* Opmaak voor koppen van niveau 1 */
+h1 {
+    color: #000000; /* Stelt de tekstkleur van h1-koppen in op zwart. */
+    font-size: 1.75em; /* Stelt de lettergrootte in op 1.75 keer de standaardgrootte. */
+    line-height: 1.3em; /* Stelt de lijnhoogte in op 1.3 keer de lettergrootte. */
+    font-weight: normal; /* Stelt de letterdikte in op normaal (niet vet). */
+    margin-top: 0; /* Verwijdert de bovenmarge van h1-elementen. */
+    margin-bottom: 0.75em; /* Voegt een ondermarge van 0.75em toe aan h1-elementen. */
+}
+
+/* Opmaak voor elementen met de class "logo" */
+.logo {
+    font-size: 50px; /* Stelt de lettergrootte in op 50px voor elementen met de class "logo". */
+}
+
+/* Opmaak voor knopelementen */
+button {
+    appearance: none; /* Verwijdert de standaardknoopstijlen van de browser. */
+    border: none; /* Verwijdert de rand om de knop. */
+    font: inherit; /* Gebruikt het overgeërfde lettertype. */
+    padding: 0; /* Verwijdert de vulling (binnenmarges) van de button. */
+    margin: 0; /* Verwijdert marges rondom de knop. */
+    outline: none; /* Verwijdert de focus-stijl rondom de knop. */
+    width: auto; /* Laat de knop zijn natuurlijke breedte bepalen door de inhoud. */
+    line-height: 1.75em; /* Stelt de lijnhoogte in op 1.75 keer de lettergrootte. */
+    align-items: center; /* Centreert de inhoud van de knop verticaal. */
+    background: #000; /* Stelt de achtergrondkleur in op zwart. */
+    color: #fff; /* Stelt de tekstkleur in op wit. */
+    text-decoration: none; /* Verwijdert onderstreping en decoratie van de tekst. */
+    border-radius: 1.875em; /* Geeft de knop afgeronde hoeken met een straal van 1.875em. */
+    padding: 0.375em 1.25em; /* Voegt vulling toe aan de knop (binnenmarges). */
+    font-size: 1em; /* Stelt de lettergrootte in op 1 keer de standaardgrootte. */
+    float: right; /* Laat de knop rechts uitlijnen binnen zijn container. */
+    cursor: pointer; /* Geeft de aanwijzer de vorm van een handje om aan te geven dat de knop klikbaar is. */
+}
+
+/* Opmaak voor secties direct onder het body-element */
+body>section {
+    max-width: 500px; /* Beperkt de maximale breedte van secties tot 500px. */
+    margin: auto; /* Centreert de secties horizontaal binnen de viewport. */
+    padding: 20px; /* Voegt een vulling (marges) van 20px toe aan de secties. */
+    border-radius: 8px; /* Geeft de secties afgeronde hoeken met een straal van 8px. */
+}
+
+/* Opmaak voor invoervelden van het type "email" */
+input[type="email"] {
+    width: 100%; /* Maakt de breedte van de invoervelden 100% van hun container. */
+    padding: 10px; /* Voegt 10px vulling toe aan de boven- en onderkant van de invoervelden. */
+    margin: 20px 0; /* Voegt 20px marge toe boven en onder de invoervelden. */
+    border: 1px solid #ccc; /* Stelt een 1px dikke rand in met grijze kleur rondom de invoervelden. */
+    border-radius: 4px; /* Geeft de invoervelden afgeronde hoeken met een straal van 4px. */
+    width: -webkit-fill-available; /* Specifieke breedte-instelling voor sommige webkit-browsers. */
+}
+
+/* Opmaak voor paragrafen binnen secties in een formulier */
+form section h2 {
+    display: inline-block; /* Laat paragrafen inline weergeven, zodat ze naast elkaar kunnen staan. */
+}
+
+/* Opmaak voor selectievakjes binnen secties in een formulier */
+form section select {
+    appearance: none; /* Verwijdert de standaardstijl van selectievakjes in sommige browsers. */
+    border: none; /* Verwijdert de rand rondom selectievakjes. */
+    font: inherit; /* Gebruikt het overgeërfde lettertype. */
+    background: transparent; /* Maakt de achtergrond van selectievakjes transparant. */
+    padding: 0; /* Verwijdert de binnenmarges van selectievakjes. */
+    margin: 0; /* Verwijdert marges rondom selectievakjes. */
+    outline: none; /* Verwijdert de focus-stijl rondom selectievakjes. */
+    width: auto; /* Laat selectievakjes hun natuurlijke breedte bepalen door de inhoud. */
+    color: inherit; /* Gebruikt de overgeërfde tekstkleur. */
+    margin: 0em 1em; /* Voegt marges toe tussen selectievakjes. */
+    text-decoration: underline; /* Voegt een onderstreping toe aan de tekst van selectievakjes. */
+    color: #757575; /* Stelt de tekstkleur in op grijs. */
+    cursor: pointer; /* Geeft de aanwijzer de vorm van een handje om aan te geven dat de selectievakjes klikbaar zijn. */
+}
+
+/* Opmaak formulier */
+form>p {
+    color: #757575; /* Stelt de tekstkleur in op grijs. */
+    line-height: 1.4em; /* Stelt de lijnhoogte in op 1.4 keer de lettergrootte. */
+    margin-bottom: 2em; /* Voegt een ondermarge van 2em toe aan paragrafen. */
+    font-weight: 300; /* Stelt de letterdikte in op 300 (licht). */
+}
+
+/* Opmaak voor links binnen het formulier */
+form p a {
+    color: #757575; /* Stelt de tekstkleur in op grijs. */
+    cursor: pointer; /* Geeft de aanwijzer de vorm van een handje om aan te geven dat de links klikbaar zijn. */
+    text-decoration: underline; /* Voegt een onderstreping toe aan de links. */
+    font-weight: 500; /* Stelt de letterdikte in op 500 (normaal). */
+}
