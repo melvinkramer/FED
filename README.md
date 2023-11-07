@@ -261,7 +261,9 @@ Header mobile
 Ik streef naar perfectie in mijn werk. Als ik eenmaal op weg ben wil ik het ook afmaken. Toch is mij dat bij de footer niet gelukt. Het is mij niet gelukt om de footer op mijn website op dezelfde manier te maken als het voorbeeld. Hoewel ik een eind op weg was, besloot ik toch hulp te vragen aan een collega om ervoor te zorgen dat alles tijdig klaar zou zijn. Mijn collega heeft me geholpen door me aan te geven welke elementen ik waar moest gebruiken, en vanaf dat punt heb ik de styling zelf verzorgd. Het uiteindelijke resultaat snap ik wel goed. 
   <img src="readme-images/Footer.png" width="375px" alt="Footer">
   
-  Verder heb ik niet de gehele website kunnen uitwerken omdat de Nike website erg uitgebreid is. 
+  Ook heb ik met de fonts en de verwijzing naar de bronnen moeite gehad deze werkbaar te krijgen op de live vertoning via Github. Op mijn live voorbeeld vanuit brackets klopt het font wel. Misschien dat de docent mij dit tijdens het eindgesprek nog kan uitleggen.
+  
+  Verder heb ik niet de gehele website kunnen uitwerken omdat de Nike website erg uitgebreid is. Denk hierbij uit het volledig uitwerken van de footer en de nav van de header.
 </details>
 
 
