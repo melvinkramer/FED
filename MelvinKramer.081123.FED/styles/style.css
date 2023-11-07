@@ -4,7 +4,7 @@
 @font-face {
     font-family: "Nike-Futura";
     /* De naam van het lettertype */
-    src: url("../fonts/Nike-Futura.woff2") format("woff2");
+    src: url("fonts/Nike-Futura.woff2") format("woff2");
     /* De bron en het formaat van het lettertype */
     /* Bron - Font gekregen van Sanne */
 }
@@ -13,7 +13,7 @@
 @font-face {
     font-family: "Nike-TG";
     /* De naam van het lettertype */
-    src: url("../fonts/Nike-TG.woff2") format("woff2");
+    src: url("fonts/Nike-TG.woff2") format("woff2");
     /* De bron en het formaat van het lettertype */
     /* Bron - Font gekregen van Sanne */
 }
