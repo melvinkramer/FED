@@ -30,7 +30,6 @@ body {
 h1 {
     font-family: "Nike-Futura";
     /* Gebruik het lettertype "Nike-Futura" voor h1-elementen */
-    src: url('../fonts/Nike-Futura.woff2') format('woff2');
     /* De bron en het formaat van het lettertype */
     /* Bron - Font gekregen van Sanne */
 }
