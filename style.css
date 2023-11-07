@@ -29,8 +29,7 @@ body {
 /* Opmaak h1-elementen met het lettertype "Nike-Futura" */
 h1 {
     font-family: "Nike-TG";
-    /* Gebruik het lettertype "Nike-Futura" voor h1-elementen */
-    src: url('../fonts/Nike-TG.woff2') format('woff2');
+    /* Gebruik het lettertype "Nike-TG" voor h1-elementen */
     /* De bron en het formaat van het lettertype */
     /* Bron - Font gekregen van Sanne */
 }
@@ -232,8 +231,6 @@ header {
     /* Zorgt dat er ruimte tussen de elementen ontstaat  */
     padding: 0 0.875em 0 1em;
     /* Binnenste vulling (marges) voor de header */
-    max-width: 120em;
-    /* Maximale breedte van de header */
     max-height: 3.75em;
     /* Maximale hoogte van de header */
 }
