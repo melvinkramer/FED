@@ -281,7 +281,7 @@ header nav ul {
     /* Zorgt ervoor dat de elementen naast elkaar komen te staan */
 }
 
-header>div {
+header > div {
     display: flex;
     /* Zorgt ervoor dat de elementen naast elkaar komen te staan */
     justify-content: center;
@@ -291,7 +291,7 @@ header>div {
 }
 
 
-header>div a {
+header > div a {
     padding: 1.2em;
     /* Binnenste vulling (marges) voor de koppelingen */
     display: flex;
@@ -313,7 +313,7 @@ header nav ul li {
     /* Achtergrond van de lijstitems is transparant */
 }
 
-header>div a {
+header > div a {
     text-decoration: none;
     /* Verwijdert de standaard onderstreping van koppelingen */
 }
@@ -350,7 +350,7 @@ header>div a {
 @media only screen and (max-width: 62.5em) {
 
     /* Verberg de sectie-elementen in de header */
-    header>section {
+    header > section {
         display: none;
     }
 }
@@ -364,7 +364,7 @@ header>div a {
     }
 
 
-    header>div a:hover {
+    header > div a:hover {
         border-bottom: 2px solid var(--color-black);
         /* Verandert de onderstreping in zwart wanneer erover wordt gehoverd */
     }
@@ -408,7 +408,7 @@ header>div a {
     /* Verborgen inhoud die buiten de UL valt wordt verborgen */
 }
 
-#banner ul li>h3 {
+#banner ul li > h3 {
     font-weight: 500;
     /* Vetgedrukte tekst */
     font-size: 1em;
@@ -450,7 +450,7 @@ header>div a {
 
 /************************************************* H1 met titel "nike Tech" en link naar shop *************************************************/
 
-body main>section:nth-of-type(2) {
+body main > section:nth-of-type(2) {
     margin: 3em 0.75em 0 0.75em;
     /* Boven- en ondermarges van 3em, linker- en rechtermarges van 0.75em */
     display: flex;
@@ -463,14 +463,14 @@ body main>section:nth-of-type(2) {
     /* Centreert de kinderen verticaal in de flex-container */
 }
 
-body main>section:nth-of-type(2) p {
+body main > section:nth-of-type(2) p {
     text-align: center;
     /* Centreert de tekst binnen het tweede section-element binnen main */
 }
 
 /************************************************* VIDEO *************************************************/
 
-body main>section:nth-of-type(3) {
+body main > section:nth-of-type(3) {
     margin-top: 3em;
     /* Voegt een bovenmarge toe van 3em aan het derde section-element binnen main */
     position: relative;
@@ -485,7 +485,7 @@ body main>section:nth-of-type(3) {
     /* Achtergrondkleur met 50% transparantie als overlay */
 }
 
-body main>section:nth-of-type(3) h2 {
+body main > section:nth-of-type(3) h2 {
     display: none;
 }
 
@@ -542,17 +542,17 @@ body main>section:nth-of-type(3) h2 {
 
 /************************************************* Carrousel trends met afbeeldingen *************************************************/
 
-body main>section:nth-of-type(4) {
+body main > section:nth-of-type(4) {
     padding: 1em;
     /* Voegt 1em padding toe aan het vierde section-element binnen main */
 }
 
-body main>section:nth-of-type(4) h2 {
+body main > section:nth-of-type(4) h2 {
     display: none;
     /* Verbergt het h2-element binnen het vierde section-element binnen main */
 }
 
-body main>section:nth-of-type(4) ul {
+body main > section:nth-of-type(4) ul {
     display: flex;
     /* Zorgt ervoor dat de elementen naast elkaar komen te staan */
     flex-direction: row;
@@ -565,7 +565,7 @@ body main>section:nth-of-type(4) ul {
     /* Voegt een schuifbalk toe */
 }
 
-body main>section:nth-of-type(4) ul li {
+body main > section:nth-of-type(4) ul li {
     margin-right: 0.75em;
     /* Voegt een rechtermarge toe aan de li-elementen */
     display: flex;
@@ -575,7 +575,7 @@ body main>section:nth-of-type(4) ul li {
 @media only screen and (max-width: 62.5em) {
     /* zichtbaar tot 62.5 em */
 
-    body main>section:nth-of-type(4) ul li img {
+    body main > section:nth-of-type(4) ul li img {
         height: 20em;
         /* Pas de hoogte van de afbeeldingen aan */
         width: 20em;
@@ -588,7 +588,7 @@ body main>section:nth-of-type(4) ul li {
 @media only screen and (max-width: 37.5em) {
     /* Mediaquery voor schermen kleiner dan 37.5em */
 
-    body main>section:nth-of-type(4) ul li img {
+    body main > section:nth-of-type(4) ul li img {
         height: 15em;
         /* Pas de hoogte van de afbeeldingen aan */
         width: 15em;
@@ -602,7 +602,7 @@ body main>section:nth-of-type(4) ul li {
 
 /* Stijlen voor de vijfde sectie in de hoofdinhoud van de pagina */
 
-body main>section:nth-of-type(5) h2 {
+body main > section:nth-of-type(5) h2 {
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -614,14 +614,14 @@ body main>section:nth-of-type(5) h2 {
     text-transform: unset;
 }
 
-body main>section:nth-of-type(5) {
+body main > section:nth-of-type(5) {
     padding: 1em;
     /* Voeg een beetje opvulling toe aan de vijfde sectie */
 }
 
 /* Stijlen voor koppen (h3) in de vijfde sectie */
 
-body main>section:nth-of-type(5) h3 {
+body main > section:nth-of-type(5) h3 {
     font-weight: 400;
     /* Stel de letterdikte in op 400 (normaal) */
     margin-bottom: 0em;
@@ -630,7 +630,7 @@ body main>section:nth-of-type(5) h3 {
 
 /* Stijlen voor alinea's (p) in de vijfde sectie */
 
-body main>section:nth-of-type(5) section p {
+body main > section:nth-of-type(5) section p {
     font-weight: 400;
     /* Stel de letterdikte in op 400 (normaal) */
     margin-top: 0.35em;
@@ -639,7 +639,7 @@ body main>section:nth-of-type(5) section p {
 
 /* Stijlen voor een ongeordende lijst (ul) in de vijfde sectie */
 
-body main>section:nth-of-type(5) ul {
+body main > section:nth-of-type(5) ul {
     display: flex;
     /* Zorgt ervoor dat de elementen naast elkaar komen te staan */
     flex-direction: row;
@@ -654,24 +654,24 @@ body main>section:nth-of-type(5) ul {
 
 /* Stijlen voor lijstitems (li) in de vijfde sectie */
 
-body main>section:nth-of-type(5) ul li {
+body main > section:nth-of-type(5) ul li {
     margin-right: 0.75em;
     /* Voeg een rechtermarge toe aan lijstitems */
     display: flex;
     flex-direction: column;
 }
 
-body main>section:nth-of-type(5) ul li div {
+body main > section:nth-of-type(5) ul li div {
     order: 2;
     /* Zet de div met de productinformatie op de tweede plaats */
 }
 
-body main>section:nth-of-type(5) ul li img {
+body main > section:nth-of-type(5) ul li img {
     order: 1;
     /* Zet de afbeelding op de eerste plaats */
 }
 
-body main>section:nth-of-type(5) ul li>p {
+body main > section:nth-of-type(5) ul li > p {
     order: 3;
     /* Houdt de prijs op de derde plaats */
 }
@@ -682,7 +682,7 @@ body main>section:nth-of-type(5) ul li>p {
     /* Pas de stijl aan voor kleine schermen */
 
     /* Zorg ervoor dat afbeeldingen in lijstitems een specifieke hoogte, breedte en schaalvergroting hebben */
-    body main>section:nth-of-type(5) ul li img {
+    body main > section:nth-of-type(5) ul li img {
         height: 20em;
         /* Stel de hoogte in */
         width: 20em;
@@ -698,7 +698,7 @@ body main>section:nth-of-type(5) ul li>p {
     /* Pas de stijl aan voor nog kleinere schermen */
 
     /* Zorg ervoor dat afbeeldingen in lijstitems een andere hoogte, breedte en schaalvergroting hebben */
-    body main>section:nth-of-type(5) ul li img {
+    body main > section:nth-of-type(5) ul li img {
         height: 15em;
         /* Stel de hoogte in */
         width: 15em;
@@ -817,7 +817,7 @@ footer div:last-of-type ul li {
         /* Schakel over naar blokopmaak op mobiel */
     }
 
-    footer>div:first-of-type {
+    footer > div:first-of-type {
         width: 100%;
         /* Neem 100% van de beschikbare breedte in beslag op mobiel */
         grid-template-columns: repeat(3, 1fr);
@@ -837,7 +837,7 @@ footer div:last-of-type ul li {
         /* Schakel over naar blokopmaak op mobiel */
     }
 
-    footer>div:first-of-type {
+    footer > div:first-of-type {
         width: 100%;
         /* Neem 100% van de beschikbare breedte in beslag op mobiel */
         grid-template-columns: 1fr;
@@ -893,4 +893,39 @@ footer div:last-of-type ul li {
             color: var(--color-black);
             /* Tekstkleur voor het element met id "banner" in donkere modus */
         }
+    }
+
+    /* CSS voor de banner carrousel */
+    #banner li {
+        display: none;
+    }
+
+    #banner li.show-item {
+        display: block;
+    }
+
+    /* CSS voor het zijmenu en overlay */
+    #sideMenu {
+        display: none;
+        /* Andere CSS-stijlen voor het zijmenu */
+    }
+
+    #overlay {
+        display: none;
+        /* Andere CSS-stijlen voor de overlay */
+    }
+
+    #sideMenu.show-menu {
+        display: block;
+        /* Voeg andere stijlen toe om het zijmenu te tonen */
+    }
+
+    #overlay.show-overlay {
+        display: block;
+        /* Voeg andere stijlen toe om de overlay te tonen */
+    }
+
+    /* CSS voor video-afspeelknoppen */
+    .show-icon {
+        display: inline-block;
     }

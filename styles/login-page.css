@@ -77,7 +77,7 @@ button {
 }
 
 /* Opmaak voor secties direct onder het body-element */
-body>main {
+body > main {
     max-width: 500px;
     /* Beperkt de maximale breedte van secties tot 500px. */
     margin: auto;
@@ -155,7 +155,7 @@ form fieldset select {
 }
 
 /* Opmaak formulier */
-form>p {
+form > p {
     color: var(--primary-color);
     ;
     /* Stelt de tekstkleur in op grijs. */
