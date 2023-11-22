@@ -4,32 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike hompagina</title>
+    <title>Nike homepagina</title>
+    <link rel="stylesheet" type="text/css" href="styles/variable.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="icon" href="images/favicon.svg" type="image/x-icon">
-
 </head>
 
 <body>
     <div id="overlay"></div>
+    
     <header>
-        <a class="pre-logo-link" href="/">
+        <a class="pre-logo-link" href="index.html" aria-label="de nike homepage">
             <svg aria-hidden="true" class="pre-logo-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px"
-                height="24px" fill="none" aria-label="Nike Logo">
+                height="24px">
                 <path fill="currentColor" fill-rule="evenodd"
                     d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
                     clip-rule="evenodd"></path>
             </svg>
         </a>
 
-        <div id="sideMenu" class="side-nav">
-            <a href="javascript:void(0)" class="closebtn" id="closeMenuButton">&times;</a>
-            <a href="#" aria-label="link naar nieuw en uitgelichte categorie">Nieuw en uitgelicht</a>
+        <div id="sideMenu">
+            <button id="closeMenuButton" aria-label="verberg het menu">&times;</button>
+            <a href="#">Nieuw en uitgelicht</a>
             <a href="#">Heren</a>
             <a href="#">Dames</a>
             <a href="#">Kids</a>
             <a href="#">Sale</a>
         </div>
+        
         <nav>
             <ul>
                 <li>
@@ -43,14 +45,14 @@
                     </button>
                 </li>
                 <li>
-                    <button aria-label="winkelwagen">
+                    <a href="#" aria-label="winkelwagen">
                         <svg aria-hidden="true" class="pre-nav-design-icon" focusable="false" viewBox="0 0 24 24"
                             role="img" width="24px" height="24px" fill="none">
                             <path stroke="currentColor" stroke-width="1.5"
                                 d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5">
                             </path>
                         </svg>
-                    </button>
+                    </a>
                 </li>
                 <li>
                     <a href="login-page.html" aria-label="mijn account">
@@ -76,7 +78,8 @@
     </header>
 
     <main>
-        <h1>Welkom op de Nike homepage</h1>
+        <h1 class="visually-hidden">Welkom op de Nike homepage</h1>
+        
         <section id="banner">
             <h2>Slider met acties, link naar shop en verzendinformatie</h2>
             <ul>
@@ -84,17 +87,17 @@
                     <h3>Tot wel 50% korting</h3>
                     <p>De seizoenspromotie is begonnen.
                         <a href="https://www.nike.com/nl/w/sale-3yaep"
-                        aria-label="link naar de seizoenspromotie pagina">Shop</a></p>
+                        aria-label="seizoenspromotie pagina">Shop</a></p>
                 </li>
                 <li>
                     <h3>Shop alle nieuwe producten</h3>
-                    <p><a href="https://www.nike.com/gb/w/new-3n82y" aria-label="link naar alle nieuwe producten">Shop</a></p>
+                    <p><a href="https://www.nike.com/gb/w/new-3n82y" aria-label="Alle nieuwe producten">Shop</a></p>
                 </li>
                 <li>
                     <h3>Gratis verzending en retourneren</h3>
-                    <p>Nike members krijgen gratis verzending en kunnen binnen 30 dagen gratis retourneren.
-                        <a href="https://www.nike.com/nl/help" aria-label="link naar de help pagina"><strong>Meer info</strong>
-                        </a><strong> </strong><a href="https://www.nike.com/nl/membership"><strong>Join
+                    <p>Nike <span lang="en">members</span> krijgen gratis verzending en kunnen binnen 30 dagen gratis retourneren.
+                        <a href="https://www.nike.com/nl/help" aria-label="De help pagina"><strong>Meer info</strong>
+                        </a><strong> </strong><a href="https://www.nike.com/nl/membership"><strong lang="en">Join
                                 Us</strong></a></p>
                 </li>
             </ul>
@@ -103,7 +106,7 @@
         <section>
             <h2>Nike Tech</h2>
             <p>Ontworpen volgens de exacte specificaties van topatleten</p>
-            <button class="button" aria-label="link naar de algemene productpagina">Bezoek Nike</button>
+            <a href="#"lang="en" aria-label="De algemene productpagina">Bezoek Nike</a>
         </section>
 
         <section>
@@ -132,20 +135,20 @@
                     <img src="images/nike_trends_1.png" alt="Tech Fleece tops">
                 </li>
                 <li>
-                    <h3> Tech fleece broeken </h3>
-                    <img src="images/nike_trends_2.png" alt="Tech Fleece broeken">
+                    <h3> Tech fleece sportkleding </h3>
+                    <img src="images/nike_trends_2.png" alt="Verschillende lagen sportkleding">
                 </li>
                 <li>
                     <h3> Matchende sets </h3>
-                    <img src="images/nike_trends_3.png" alt="Matchende sets">
+                    <img src="images/nike_trends_3.png" alt="Matchende set van donkerblauwe broek en lichtblauwe jas">
                 </li>
                 <li>
-                    <h3> Tech fleece tops </h3>
-                    <img src="images/nike_trends_4.png" alt="Tech Fleece tops">
+                    <h3> Tech fleece schoenen </h3>
+                    <img src="images/nike_trends_4.png" alt="Schoen van tech fleece collectie">
                 </li>
                 <li>
-                    <h3> Tech fleece broeken </h3>
-                    <img src="images/nike_trends_5.png" alt="Tech Fleece broeken">
+                    <h3> Tech fleece jassen </h3>
+                    <img src="images/nike_trends_5.png" alt="Verschillende jassen uit de tech fleece collectie ">
                 </li>
             </ul>
         </section>
@@ -155,7 +158,7 @@
             <ul>
                 <li>
                     <div>
-                        <h3> Nike Dunk Low </h3>
+                        <h3 lang="en">Nike Dunk Low</h3>
                         <p>Kinderschoen</p>
                     </div>
                     <img src="images/Schoen-1.jpg" alt="Tech Nike Dunk Low">
@@ -163,7 +166,7 @@
                 </li>
                 <li>
                     <div>
-                        <h3> Nike Dunk Low </h3>
+                        <h3 lang="en"> Nike Dunk Low</h3>
                         <p>Dameschoen</p>
                     </div>
                     <img src="images/Schoen-2.jpg" alt="Tech Nike Dunk Low">
@@ -171,7 +174,7 @@
                 </li>
                 <li>
                     <div>
-                        <h3> Nike Dunk Low </h3>
+                        <h3 lang="en">Nike Dunk Low</h3>
                         <p>Herenschoenen</p>
                     </div>
                     <img src="images/Schoen-3.jpg" alt="Tech Nike Dunk Low">
@@ -179,7 +182,7 @@
                 </li>
                 <li>
                     <div>
-                        <h3> Nike Dunk Mid </h3>
+                        <h3 lang="en">Nike Dunk Mid</h3>
                         <p>kinderschoen</p>
                     </div>
                     <img src="images/Schoen-4.jpg" alt="Tech Nike Dunk Mid">
@@ -187,7 +190,7 @@
                 </li>
                 <li>
                     <div>
-                        <h3> Nike Air Force 1 Mid </h3>
+                        <h3 lang="en">Nike Air Force 1 Mid</h3>
                         <p>Damesschoen</p>
                     </div>
                     <img src="images/Schoen-5.jpg" alt="Tech Nike Air Force 1 Mid">
@@ -195,7 +198,7 @@
                 </li>
                 <li>
                     <div>
-                        <h3> Nike Air Force 1</h3>
+                        <h3 lang="en"> Nike Air Force 1</h3>
                         <p>Dameschoen</p>
                     </div>
                     <img src="images/Schoen-6.jpg" alt="Tech Nike Air Force 1">
@@ -203,7 +206,7 @@
                 </li>
                 <li>
                     <div>
-                        <h3> Nike Dunk High </h3>
+                        <h3 lang="en">Nike Dunk High </h3>
                         <p>Herenschoen</p>
                     </div>
                     <img src="images/Schoen-7.jpg" alt="Tech Nike Dunk High">
@@ -217,13 +220,13 @@
     <footer>
         <div>
             <ul>
-              <li><a href="https://www.nike.com/nl/cadeaubonnen" aria-label="Cadeaubonnen Nike">Cadeaubonnen</a></li>
-              <li><a href="https://www.nike.com/nl/retail" aria-label="Zoek een Nike winkel">Zoek een store</a></li>
-              <li><a href="https://www.nike.com/nl/verhalen" aria-label="Nike JournalNieuws en Verhalen">Nike journal</a></li>
-              <li><a href="https://www.nike.com/nl/membership" aria-label="Word lid van Nike Membership">Word member</a></li>
-              <li><a href="https://www.nike.com/nl/student-discount" aria-label="Studentenkorting bij Nike">Studentenkorting</a></li>
+              <li><a href="https://www.nike.com/nl/cadeaubonnen">Cadeaubonnen</a></li>
+              <li><a href="https://www.nike.com/nl/retail">Zoek een store</a></li>
+              <li><a href="https://www.nike.com/nl/verhalen">Nike journal</a></li>
+              <li><a href="https://www.nike.com/nl/membership">Word member</a></li>
+              <li><a href="https://www.nike.com/nl/student-discount">Studentenkorting</a></li>
               <li><a href="#site-feedback">Feedback</a></li>
-              <li><a href="https://www.nike.com/nl/promo-code" aria-label="Nike Promotiecodes">Promotiecodes</a></li>
+              <li><a href="https://www.nike.com/nl/promo-code">Promotiecodes</a></li>
             </ul>
             <ul>
               <li><a href="https://www.nike.com/nl/help" aria-label="Hulp en ondersteuning - Nike Help">Help</a></li>
@@ -235,17 +238,17 @@
               <li><a href="https://www.nike.com/nl/help/a/promo-toepassen-eu" aria-label="Hulp bij het toepassen van Nike-promotiecodes">Nike promotiecodes hulp</a></li>
             </ul>
             <ul>
-              <li><a href="https://about.nike.com/" aria-label="Meer informatie over Nike">Over nike</a></li>
-              <li><a href="https://news.nike.com/" aria-label="Het laatste nieuws van Nike">Nieuws</a></li>
-              <li><a href="https://jobs.nike.com/" aria-label="Carrièremogelijkheden bij Nike">Werken bij nike</a></li>
-              <li><a href="https://investors.nike.com/" aria-label="Informatie voor investeerders">Investeerders</a></li>
-              <li><a href="https://www.nike.com/nl/duurzaamheid" aria-label="Duurzaamheid bij Nike">Duurzaamheid</a></li>
+              <li><a href="https://about.nike.com/">Over nike</a></li>
+              <li><a href="https://news.nike.com/">Nieuws</a></li>
+              <li><a href="https://jobs.nike.com/">Werken bij nike</a></li>
+              <li><a href="https://investors.nike.com/">Investeerders</a></li>
+              <li><a href="https://www.nike.com/nl/duurzaamheid">Duurzaamheid</a></li>
             </ul>
             <ul>
-              <li><a href="https://www.nike.com/nl/membership" aria-label="Word lid van Nike - Nike Membership">Join us</a></li>
-              <li><a href="https://www.nike.com/nl/nike-app" aria-label="Download de Nike App">Nike app</a></li>
-              <li><a href="https://www.nike.com/nl/nrc-app" aria-label="Nike Run Club - Hardloop-app">Nike run club</a></li>
-              <li><a href="https://www.nike.com/nl/ntc-app" aria-label="Nike Training Club - Fitness-app">Nike training club</a></li>
+              <li><a href="https://www.nike.com/nl/membership">Join us</a></li>
+              <li><a href="https://www.nike.com/nl/nike-app">Nike app</a></li>
+              <li><a href="https://www.nike.com/nl/nrc-app">Nike run club</a></li>
+              <li><a href="https://www.nike.com/nl/ntc-app">Nike training club</a></li>
               <li><a href="https://www.nike.com/nl/launch" aria-label="Nike SNKRS - Sneaker-app">SNKRS</a></li>
             </ul>
         </div>

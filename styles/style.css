@@ -1,34 +1,4 @@
-:root {
-    --color-white: #ffffff;
-    --color-black: #000000;
-    --primary-color: #666666;
-    --secondary-color: #f2f2f2;
-    --accent-color: #e5e5e5;
-    --text-color: #333;
-    --text-hover: #f1f1f1;
-    --color-background: #f1f1f1;
-}
-
-
 /************************************************* Algemeen *************************************************/
-
-/* Geeft een lettertype en de bron aan voor het lettertype "Nike-Futura" */
-@font-face {
-    font-family: "Nike-Futura";
-    /* De naam van het lettertype */
-    src: url("fonts/Nike-Futura.woff2") format("woff2");
-    /* De bron en het formaat van het lettertype */
-    /* Bron - Font gekregen van Sanne */
-}
-
-/* Geeft een lettertype en de bron aan voor het lettertype "Nike-TG" */
-@font-face {
-    font-family: "Nike-TG";
-    /* De naam van het lettertype */
-    src: url("fonts/Nike-TG.woff2") format("woff2");
-    /* De bron en het formaat van het lettertype */
-    /* Bron - Font gekregen van Sanne */
-}
 
 /* Stel de algemene opmaakregels voor de body in */
 body {
@@ -36,10 +6,6 @@ body {
     /* Verwijder de standaardmarge van de body */
     font-family: Helvetica, Arial, sans-serif;
     /* Geef een standaard lettertype aan voor de body */
-}
-
-h1 {
-    display: none;
 }
 
 /* Opmaak h1-elementen met het lettertype "Nike-Futura" */
@@ -92,6 +58,17 @@ section button {
     /* Stel de lettergrootte in op 1em (standaardgrootte) */
 }
 
+section:nth-of-type(2) a {
+    line-height: 1.75em;
+    align-items: center;
+    background: var(--color-black);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 1.875em;
+    padding: 0.375em 1.25em;
+    font-size: 1em;
+}
+
 /* Opmaak voor alle links */
 a {
     color: var(--podium-cds-color-black);
@@ -109,17 +86,27 @@ a {
 }
 
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 
 /************************************************* nav *************************************************/
 
-.closebtn {
+#closeMenuButton {
     display: none;
 }
 
 @media only screen and (max-width: 62.5em) {
 
     /* opmaak voor het zijmenu */
-    .side-nav {
+    #sideMenu {
         height: 100%;
         /* Volledige hoogte van het scherm innemen */
         width: 0;
@@ -147,7 +134,7 @@ a {
     }
 
     /* opmaak voor links binnen het zijmenu */
-    .side-nav a {
+    #sideMenu a {
         padding: 0.625em 0em 0.625em 0em;
         /* Ruimte rond de tekst binnen links */
         text-decoration: none;
@@ -163,12 +150,12 @@ a {
     }
 
     /* opmaak voor links binnen het zijmenu wanneer de muis erover beweegt */
-    .side-nav a:hover {
+    #sideMenu a:hover {
         color: var(--primary-color);
         /* Verander tekstkleur naar grijs */
     }
 
-    .closebtn {
+    #closeMenuButton {
         display: block;
     }
 
@@ -188,16 +175,16 @@ a {
     }
 
     /* Stijlen voor de knop om het zijmenu te sluiten */
-    .closebtn {
+    #closeMenuButton {
         position: absolute;
         /* Een vaste positie binnen het zijmenu */
         top: 0.625em;
         /* Afstand vanaf de bovenkant */
         right: 0.625em;
         /* Afstand vanaf de rechterkant */
-        padding: 1.25em;
+        padding: 0.25em;
         /* Ruimte binnen de knop */
-        color: var(--color-white);
+        color: var(--color-black);
         /* Tekstkleur wit */
         font-size: 1.875em;
         /* Tekengrootte van de knop */
@@ -208,8 +195,8 @@ a {
     }
 
     /* Stijlen voor de knop om het zijmenu te sluiten wanneer de muis erover beweegt  */
-    .closebtn:hover {
-        color: var(--text-hover)
+    #closeMenuButton:hover {
+        color: var(--primary-color)
             /* Verander tekstkleur naar lichtgrijs */
     }
 
@@ -231,7 +218,7 @@ a {
         /* Plaats aan de rechterkant van het scherm */
         bottom: 0;
         /* Plaats aan de onderkant van het scherm */
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: var(--achtergrondkleur);
         /* Halfdoorzichtige zwarte achtergrond */
         z-index: 1;
         /* Plaats boven andere inhoud, maar onder het zijmenu */
@@ -494,7 +481,7 @@ body main>section:nth-of-type(3) {
     /* 100% breedte van het element */
     height: 31.25em;
     /* Hoogte van het element */
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--achtergrondkleur);
     /* Achtergrondkleur met 50% transparantie als overlay */
 }
 
@@ -520,7 +507,7 @@ body main>section:nth-of-type(3) h2 {
 }
 
 #videoToggleButton {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--achtergrondkleur);
     /* Achtergrondkleur met 60% transparantie */
     border: none;
     /* Geen rand */
@@ -543,7 +530,7 @@ body main>section:nth-of-type(3) h2 {
 }
 
 #videoToggleButton:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--achtergrondkleur);
     /* Achtergrondkleur met 80% transparantie bij hover */
 }
 

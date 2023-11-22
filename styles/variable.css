@@ -1,0 +1,31 @@
+/* Geeft een lettertype en de bron aan voor het lettertype "Nike-Futura" */
+@font-face {
+    font-family: "Nike-Futura";
+    /* De naam van het lettertype */
+    src: url("fonts/Nike-Futura.woff2") format("woff2");
+    /* De bron en het formaat van het lettertype */
+    /* Bron - Font gekregen van Sxxxe */
+}
+
+/* Geeft een lettertype en de bron aan voor het lettertype "Nike-TG" */
+@font-face {
+    font-family: "Nike-TG";
+    /* De naam van het lettertype */
+    src: url("fonts/Nike-TG.woff2") format("woff2");
+    /* De bron en het formaat van het lettertype */
+    /* Bron - Font gekregen van Sxxxe */
+}
+
+
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --primary-color: #666666;
+    --secondary-color: #f2f2f2;
+    --accent-color: #e5e5e5;
+    --text-color: #333;
+    --text-hover: #f1f1f1;
+    --color-background: #f1f1f1;
+    --achtergrondkleur: rgba(0, 0, 0, 0.5);
+}
