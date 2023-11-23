@@ -179,3 +179,72 @@ form p a {
     font-weight: 500;
     /* Stelt de letterdikte in op 500 (normaal). */
 }
+
+/* media query voor donkere modus) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        /* Achtergrondkleur van de pagina en tekstkleur in donkere modus */
+    }
+
+    /* Opmaak voor buttons in donkere modus */
+    a.button {
+        background: var(--color-white);
+        color: var(--color-black);
+    }
+
+    /* Aangepaste stijlen voor een element met id "banner" in donkere modus */
+    #banner {
+        color: var(--color-black);
+        /* Tekstkleur voor het element met id "banner" in donkere modus */
+    }
+
+    header {
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+
+    header svg {
+        color: var(--color-white);
+    }
+
+    header svg.pre-nav-design-icon {
+        color: var(--color-white);
+    }
+
+    #banner {
+        background-color: var(--text-color);
+        color: var(--color-white);
+    }
+
+    header > div a {
+        border-bottom: 2px solid var(--color-black);
+    }
+
+    header > div a:hover {
+        border-bottom: 2px solid var(--color-white);
+    }
+
+    #sideMenu {
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+
+    #sideMenu a {
+        color: var(--color-white);
+    }
+
+    #closeMenuButton {
+        color: var(--color-white);
+    }
+
+    .pre-logo-link {
+        color: var(--color-white);
+    }
+
+    button {
+        background: var(--color-white);
+        color: var(--color-black);
+    }
+}

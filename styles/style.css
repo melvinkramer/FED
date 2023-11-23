@@ -444,10 +444,6 @@ header > div a {
     /* Flexbox-configuratie om LI-elementen in één rij te plaatsen */
 }
 
-#banner h2 {
-    display: none;
-}
-
 /************************************************* H1 met titel "nike Tech" en link naar shop *************************************************/
 
 body main > section:nth-of-type(2) {
@@ -483,10 +479,6 @@ body main > section:nth-of-type(3) {
     /* Hoogte van het element */
     background: var(--achtergrondkleur);
     /* Achtergrondkleur met 50% transparantie als overlay */
-}
-
-body main > section:nth-of-type(3) h2 {
-    display: none;
 }
 
 #backgroundVideo {
@@ -545,11 +537,6 @@ body main > section:nth-of-type(3) h2 {
 body main > section:nth-of-type(4) {
     padding: 1em;
     /* Voegt 1em padding toe aan het vierde section-element binnen main */
-}
-
-body main > section:nth-of-type(4) h2 {
-    display: none;
-    /* Verbergt het h2-element binnen het vierde section-element binnen main */
 }
 
 body main > section:nth-of-type(4) ul {
@@ -873,59 +860,95 @@ footer div:last-of-type ul li {
         /* Binnenste vulling van de knoppen */
         font-size: 1em;
     }
+}
 
-    /* media query voor donkere modus) */
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: var(--color-black);
-            color: var(--color-white);
-            /* Achtergrondkleur van de pagina en tekstkleur in donkere modus */
-        }
-
-        /* Opmaak voor buttons in donkere modus */
-        a.button {
-            background: var(--color-white);
-            color: var(--color-black);
-        }
-
-        /* Aangepaste stijlen voor een element met id "banner" in donkere modus */
-        #banner {
-            color: var(--color-black);
-            /* Tekstkleur voor het element met id "banner" in donkere modus */
-        }
+/* media query voor donkere modus) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        /* Achtergrondkleur van de pagina en tekstkleur in donkere modus */
     }
 
-    /* CSS voor de banner carrousel */
-    #banner li {
-        display: none;
+    /* Opmaak voor buttons in donkere modus */
+    section:nth-of-type(2) a {
+        background: var(--color-white);
+        color: var(--color-black);
     }
 
-    #banner li.show-item {
-        display: block;
+    /* Aangepaste stijlen voor een element met id "banner" in donkere modus */
+    #banner {
+        color: var(--color-black);
+        /* Tekstkleur voor het element met id "banner" in donkere modus */
     }
 
-    /* CSS voor het zijmenu en overlay */
+    header {
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+
+    header svg {
+        color: var(--color-white);
+    }
+
+    header svg.pre-nav-design-icon {
+        color: var(--color-white);
+    }
+
+    #banner {
+        background-color: var(--text-color);
+        color: var(--color-white);
+    }
+
+    header > div a {   
+        border-bottom: 2px solid var(--color-black);
+    }
+     header > div a:hover {   
+        border-bottom: 2px solid var(--color-white);
+    }
     #sideMenu {
-        display: none;
-        /* Andere CSS-stijlen voor het zijmenu */
+        background-color: var(--color-black);
+        color: var(--color-white);
     }
+    #sideMenu a {
+        color: var(--color-white);
+    }
+    #closeMenuButton {
+        color: var(--color-white);
+    }
+}
 
-    #overlay {
-        display: none;
-        /* Andere CSS-stijlen voor de overlay */
-    }
+/* CSS voor de banner carrousel */
+#banner li {
+    display: none;
+}
 
-    #sideMenu.show-menu {
-        display: block;
-        /* Voeg andere stijlen toe om het zijmenu te tonen */
-    }
+#banner li.show-item {
+    display: block;
+}
 
-    #overlay.show-overlay {
-        display: block;
-        /* Voeg andere stijlen toe om de overlay te tonen */
-    }
+/* CSS voor het zijmenu en overlay */
 
-    /* CSS voor video-afspeelknoppen */
-    .show-icon {
-        display: inline-block;
-    }
+#overlay {
+    display: none;
+    /* Andere CSS-stijlen voor de overlay */
+}
+
+#sideMenu.show-menu {
+    display: block;
+    /* Voeg andere stijlen toe om het zijmenu te tonen */
+}
+
+#overlay.show-overlay {
+    display: block;
+    /* Voeg andere stijlen toe om de overlay te tonen */
+}
+
+#videoToggleButton svg {
+    display: none;
+}
+
+/* CSS voor video-afspeelknoppen */
+#videoToggleButton .show-icon {
+    display: inline-block;
+}
